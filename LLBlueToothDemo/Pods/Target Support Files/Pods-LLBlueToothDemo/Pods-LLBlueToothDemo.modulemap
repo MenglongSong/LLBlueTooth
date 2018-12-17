@@ -1,0 +1,6 @@
+framework module Pods_LLBlueToothDemo {
+  umbrella header "Pods-LLBlueToothDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
