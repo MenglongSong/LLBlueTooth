@@ -17,6 +17,7 @@
 		A243178121C7C07B00726B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */; };
 		A243178C21C7C07B00726B34 /* LLBlueToothDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243178B21C7C07B00726B34 /* LLBlueToothDemoTests.swift */; };
 		A243179721C7C07B00726B34 /* LLBlueToothDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243179621C7C07B00726B34 /* LLBlueToothDemoUITests.swift */; };
+		E2F442FC21C8F53000A3D5E9 /* BLENativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C7D7A05ADEF8755A5513E0B3 /* Pods-LLBlueToothDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemo/Pods-LLBlueToothDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D3098F4A65F1D6FCF1DE10 /* Pods_LLBlueToothDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLBlueToothDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E859651179B612EE31417 /* Pods-LLBlueToothDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemoUITests/Pods-LLBlueToothDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLENativeVC.swift; sourceTree = "<group>"; };
 		F60A58BEC28D0B210E26A9FE /* Pods-LLBlueToothDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemoTests/Pods-LLBlueToothDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 			children = (
 				A243177621C7C07700726B34 /* AppDelegate.swift */,
 				A243177821C7C07700726B34 /* ViewController.swift */,
+				E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */,
 				A243177A21C7C07700726B34 /* Main.storyboard */,
 				A243177D21C7C07B00726B34 /* Assets.xcassets */,
 				A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */,
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F442FC21C8F53000A3D5E9 /* BLENativeVC.swift in Sources */,
 				A243177921C7C07700726B34 /* ViewController.swift in Sources */,
 				A243177721C7C07700726B34 /* AppDelegate.swift in Sources */,
 			);
