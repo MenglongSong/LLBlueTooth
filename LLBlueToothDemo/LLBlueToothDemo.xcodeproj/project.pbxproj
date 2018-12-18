@@ -17,12 +17,16 @@
 		A243178121C7C07B00726B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */; };
 		A243178C21C7C07B00726B34 /* LLBlueToothDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243178B21C7C07B00726B34 /* LLBlueToothDemoTests.swift */; };
 		A243179721C7C07B00726B34 /* LLBlueToothDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243179621C7C07B00726B34 /* LLBlueToothDemoUITests.swift */; };
+<<<<<<< HEAD
 		A24317B221C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
 		A24317B921C7C17A00726B34 /* LLBlueToothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317B821C7C17A00726B34 /* LLBlueToothTests.swift */; };
 		A24317BB21C7C17A00726B34 /* LLBlueTooth.h in Headers */ = {isa = PBXBuildFile; fileRef = A24317AB21C7C17900726B34 /* LLBlueTooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24317BE21C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
 		A24317BF21C7C17A00726B34 /* LLBlueTooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A24317C821C7C19500726B34 /* LLBlueTooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317C721C7C19500726B34 /* LLBlueTooth.swift */; };
+=======
+		E2F442FC21C8F53000A3D5E9 /* BLENativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */; };
+>>>>>>> 263110c915cb978c22449e297ba04a14d186950e
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +110,7 @@
 		C7D7A05ADEF8755A5513E0B3 /* Pods-LLBlueToothDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemo/Pods-LLBlueToothDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D3098F4A65F1D6FCF1DE10 /* Pods_LLBlueToothDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLBlueToothDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4E859651179B612EE31417 /* Pods-LLBlueToothDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemoUITests/Pods-LLBlueToothDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLENativeVC.swift; sourceTree = "<group>"; };
 		F60A58BEC28D0B210E26A9FE /* Pods-LLBlueToothDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemoTests/Pods-LLBlueToothDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +199,7 @@
 			children = (
 				A243177621C7C07700726B34 /* AppDelegate.swift */,
 				A243177821C7C07700726B34 /* ViewController.swift */,
+				E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */,
 				A243177A21C7C07700726B34 /* Main.storyboard */,
 				A243177D21C7C07B00726B34 /* Assets.xcassets */,
 				A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */,
@@ -529,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F442FC21C8F53000A3D5E9 /* BLENativeVC.swift in Sources */,
 				A243177921C7C07700726B34 /* ViewController.swift in Sources */,
 				A243177721C7C07700726B34 /* AppDelegate.swift in Sources */,
 			);
