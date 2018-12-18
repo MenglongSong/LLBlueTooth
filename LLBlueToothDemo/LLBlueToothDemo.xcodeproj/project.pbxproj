@@ -17,6 +17,12 @@
 		A243178121C7C07B00726B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */; };
 		A243178C21C7C07B00726B34 /* LLBlueToothDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243178B21C7C07B00726B34 /* LLBlueToothDemoTests.swift */; };
 		A243179721C7C07B00726B34 /* LLBlueToothDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243179621C7C07B00726B34 /* LLBlueToothDemoUITests.swift */; };
+		A24317B221C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
+		A24317B921C7C17A00726B34 /* LLBlueToothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317B821C7C17A00726B34 /* LLBlueToothTests.swift */; };
+		A24317BB21C7C17A00726B34 /* LLBlueTooth.h in Headers */ = {isa = PBXBuildFile; fileRef = A24317AB21C7C17900726B34 /* LLBlueTooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A24317BE21C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
+		A24317BF21C7C17A00726B34 /* LLBlueTooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A24317C821C7C19500726B34 /* LLBlueTooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317C721C7C19500726B34 /* LLBlueTooth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,42 @@
 			remoteGlobalIDString = A243177221C7C07700726B34;
 			remoteInfo = LLBlueToothDemo;
 		};
+		A24317B321C7C17A00726B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A243176B21C7C07700726B34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24317A821C7C17900726B34;
+			remoteInfo = LLBlueTooth;
+		};
+		A24317B521C7C17A00726B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A243176B21C7C07700726B34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A243177221C7C07700726B34;
+			remoteInfo = LLBlueToothDemo;
+		};
+		A24317BC21C7C17A00726B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A243176B21C7C07700726B34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A24317A821C7C17900726B34;
+			remoteInfo = LLBlueTooth;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A24317C521C7C17A00726B34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A24317BF21C7C17A00726B34 /* LLBlueTooth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		143CEB0A32F3ED773837BFE7 /* Pods_LLBlueToothDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLBlueToothDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +95,13 @@
 		A243179221C7C07B00726B34 /* LLBlueToothDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLBlueToothDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A243179621C7C07B00726B34 /* LLBlueToothDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBlueToothDemoUITests.swift; sourceTree = "<group>"; };
 		A243179821C7C07B00726B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24317A921C7C17900726B34 /* LLBlueTooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LLBlueTooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24317AB21C7C17900726B34 /* LLBlueTooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLBlueTooth.h; sourceTree = "<group>"; };
+		A24317AC21C7C17900726B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24317B121C7C17900726B34 /* LLBlueToothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLBlueToothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24317B821C7C17A00726B34 /* LLBlueToothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBlueToothTests.swift; sourceTree = "<group>"; };
+		A24317BA21C7C17A00726B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24317C721C7C19500726B34 /* LLBlueTooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBlueTooth.swift; sourceTree = "<group>"; };
 		BBDD35E90CFAC62B8C8C65A0 /* Pods-LLBlueToothDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemoUITests/Pods-LLBlueToothDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D7A05ADEF8755A5513E0B3 /* Pods-LLBlueToothDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLBlueToothDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLBlueToothDemo/Pods-LLBlueToothDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D3098F4A65F1D6FCF1DE10 /* Pods_LLBlueToothDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLBlueToothDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C48D2590FF203BCABB8D88E /* Pods_LLBlueToothDemo.framework in Frameworks */,
+				A24317BE21C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +132,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C6BBB4ABFF1C4E616B0460 /* Pods_LLBlueToothDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24317A621C7C17900726B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24317AE21C7C17900726B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24317B221C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +169,8 @@
 				A243177521C7C07700726B34 /* LLBlueToothDemo */,
 				A243178A21C7C07B00726B34 /* LLBlueToothDemoTests */,
 				A243179521C7C07B00726B34 /* LLBlueToothDemoUITests */,
+				A24317AA21C7C17900726B34 /* LLBlueTooth */,
+				A24317B721C7C17A00726B34 /* LLBlueToothTests */,
 				A243177421C7C07700726B34 /* Products */,
 				EE6A7985CA904E1952DE9EE3 /* Pods */,
 				314B3D872C1FA5DAE3937FB5 /* Frameworks */,
@@ -117,6 +183,8 @@
 				A243177321C7C07700726B34 /* LLBlueToothDemo.app */,
 				A243178721C7C07B00726B34 /* LLBlueToothDemoTests.xctest */,
 				A243179221C7C07B00726B34 /* LLBlueToothDemoUITests.xctest */,
+				A24317A921C7C17900726B34 /* LLBlueTooth.framework */,
+				A24317B121C7C17900726B34 /* LLBlueToothTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +220,25 @@
 			path = LLBlueToothDemoUITests;
 			sourceTree = "<group>";
 		};
+		A24317AA21C7C17900726B34 /* LLBlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				A24317AB21C7C17900726B34 /* LLBlueTooth.h */,
+				A24317C721C7C19500726B34 /* LLBlueTooth.swift */,
+				A24317AC21C7C17900726B34 /* Info.plist */,
+			);
+			path = LLBlueTooth;
+			sourceTree = "<group>";
+		};
+		A24317B721C7C17A00726B34 /* LLBlueToothTests */ = {
+			isa = PBXGroup;
+			children = (
+				A24317B821C7C17A00726B34 /* LLBlueToothTests.swift */,
+				A24317BA21C7C17A00726B34 /* Info.plist */,
+			);
+			path = LLBlueToothTests;
+			sourceTree = "<group>";
+		};
 		EE6A7985CA904E1952DE9EE3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +254,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A24317A421C7C17900726B34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24317BB21C7C17A00726B34 /* LLBlueTooth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		A243177221C7C07700726B34 /* LLBlueToothDemo */ = {
 			isa = PBXNativeTarget;
@@ -176,10 +274,12 @@
 				A243176F21C7C07700726B34 /* Sources */,
 				A243177021C7C07700726B34 /* Frameworks */,
 				A243177121C7C07700726B34 /* Resources */,
+				A24317C521C7C17A00726B34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A24317BD21C7C17A00726B34 /* PBXTargetDependency */,
 			);
 			name = LLBlueToothDemo;
 			productName = LLBlueToothDemo;
@@ -224,6 +324,43 @@
 			productReference = A243179221C7C07B00726B34 /* LLBlueToothDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A24317A821C7C17900726B34 /* LLBlueTooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24317C421C7C17A00726B34 /* Build configuration list for PBXNativeTarget "LLBlueTooth" */;
+			buildPhases = (
+				A24317A421C7C17900726B34 /* Headers */,
+				A24317A521C7C17900726B34 /* Sources */,
+				A24317A621C7C17900726B34 /* Frameworks */,
+				A24317A721C7C17900726B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLBlueTooth;
+			productName = LLBlueTooth;
+			productReference = A24317A921C7C17900726B34 /* LLBlueTooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A24317B021C7C17900726B34 /* LLBlueToothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A24317C621C7C17A00726B34 /* Build configuration list for PBXNativeTarget "LLBlueToothTests" */;
+			buildPhases = (
+				A24317AD21C7C17900726B34 /* Sources */,
+				A24317AE21C7C17900726B34 /* Frameworks */,
+				A24317AF21C7C17900726B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A24317B421C7C17A00726B34 /* PBXTargetDependency */,
+				A24317B621C7C17A00726B34 /* PBXTargetDependency */,
+			);
+			name = LLBlueToothTests;
+			productName = LLBlueToothTests;
+			productReference = A24317B121C7C17900726B34 /* LLBlueToothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +382,14 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A243177221C7C07700726B34;
 					};
+					A24317A821C7C17900726B34 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A24317B021C7C17900726B34 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A243177221C7C07700726B34;
+					};
 				};
 			};
 			buildConfigurationList = A243176E21C7C07700726B34 /* Build configuration list for PBXProject "LLBlueToothDemo" */;
@@ -263,6 +408,8 @@
 				A243177221C7C07700726B34 /* LLBlueToothDemo */,
 				A243178621C7C07B00726B34 /* LLBlueToothDemoTests */,
 				A243179121C7C07B00726B34 /* LLBlueToothDemoUITests */,
+				A24317A821C7C17900726B34 /* LLBlueTooth */,
+				A24317B021C7C17900726B34 /* LLBlueToothTests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +433,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A243179021C7C07B00726B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24317A721C7C17900726B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24317AF21C7C17900726B34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,6 +550,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A24317A521C7C17900726B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24317C821C7C19500726B34 /* LLBlueTooth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24317AD21C7C17900726B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A24317B921C7C17A00726B34 /* LLBlueToothTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -401,6 +578,21 @@
 			isa = PBXTargetDependency;
 			target = A243177221C7C07700726B34 /* LLBlueToothDemo */;
 			targetProxy = A243179321C7C07B00726B34 /* PBXContainerItemProxy */;
+		};
+		A24317B421C7C17A00726B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24317A821C7C17900726B34 /* LLBlueTooth */;
+			targetProxy = A24317B321C7C17A00726B34 /* PBXContainerItemProxy */;
+		};
+		A24317B621C7C17A00726B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A243177221C7C07700726B34 /* LLBlueToothDemo */;
+			targetProxy = A24317B521C7C17A00726B34 /* PBXContainerItemProxy */;
+		};
+		A24317BD21C7C17A00726B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A24317A821C7C17900726B34 /* LLBlueTooth */;
+			targetProxy = A24317BC21C7C17A00726B34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -544,6 +736,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7D7A05ADEF8755A5513E0B3 /* Pods-LLBlueToothDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYW4U2TVKK;
@@ -563,6 +756,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D33AD9524E2ABF66BF4EA9B /* Pods-LLBlueToothDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYW4U2TVKK;
@@ -664,6 +858,105 @@
 			};
 			name = Release;
 		};
+		A24317C021C7C17A00726B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LYW4U2TVKK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LLBlueTooth/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menglongsong.LLBlueTooth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A24317C121C7C17A00726B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LYW4U2TVKK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LLBlueTooth/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menglongsong.LLBlueTooth;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A24317C221C7C17A00726B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LYW4U2TVKK;
+				INFOPLIST_FILE = LLBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menglongsong.LLBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLBlueToothDemo.app/LLBlueToothDemo";
+			};
+			name = Debug;
+		};
+		A24317C321C7C17A00726B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LYW4U2TVKK;
+				INFOPLIST_FILE = LLBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menglongsong.LLBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLBlueToothDemo.app/LLBlueToothDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -699,6 +992,24 @@
 			buildConfigurations = (
 				A24317A221C7C07B00726B34 /* Debug */,
 				A24317A321C7C07B00726B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24317C421C7C17A00726B34 /* Build configuration list for PBXNativeTarget "LLBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24317C021C7C17A00726B34 /* Debug */,
+				A24317C121C7C17A00726B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A24317C621C7C17A00726B34 /* Build configuration list for PBXNativeTarget "LLBlueToothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A24317C221C7C17A00726B34 /* Debug */,
+				A24317C321C7C17A00726B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
