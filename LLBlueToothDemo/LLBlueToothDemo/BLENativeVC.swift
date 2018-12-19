@@ -23,10 +23,8 @@ class BLENativeVC: UIViewController {
         
         self.title = "蓝牙测试"
         
-     
         // 初始化中心管理
         self.centralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
-        
     }
 
 }
@@ -49,7 +47,9 @@ extension BLENativeVC: CBCentralManagerDelegate {
             central.stopScan()
             
             // 连接蓝牙设备
-            central.connect(self.bestPeripheral!.peripheral!, options: nil)
+            if (self.bestPeripheral != nil) {
+                central.connect(self.bestPeripheral!.peripheral!, options: nil)
+            }
         }
         debugPrint("操作111")
         
