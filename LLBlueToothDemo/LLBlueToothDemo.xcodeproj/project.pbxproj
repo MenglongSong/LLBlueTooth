@@ -17,16 +17,13 @@
 		A243178121C7C07B00726B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243177F21C7C07B00726B34 /* LaunchScreen.storyboard */; };
 		A243178C21C7C07B00726B34 /* LLBlueToothDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243178B21C7C07B00726B34 /* LLBlueToothDemoTests.swift */; };
 		A243179721C7C07B00726B34 /* LLBlueToothDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243179621C7C07B00726B34 /* LLBlueToothDemoUITests.swift */; };
-<<<<<<< HEAD
 		A24317B221C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
 		A24317B921C7C17A00726B34 /* LLBlueToothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317B821C7C17A00726B34 /* LLBlueToothTests.swift */; };
 		A24317BB21C7C17A00726B34 /* LLBlueTooth.h in Headers */ = {isa = PBXBuildFile; fileRef = A24317AB21C7C17900726B34 /* LLBlueTooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24317BE21C7C17A00726B34 /* LLBlueTooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; };
 		A24317BF21C7C17A00726B34 /* LLBlueTooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A24317A921C7C17900726B34 /* LLBlueTooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A24317C821C7C19500726B34 /* LLBlueTooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24317C721C7C19500726B34 /* LLBlueTooth.swift */; };
-=======
 		E2F442FC21C8F53000A3D5E9 /* BLENativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F442FB21C8F53000A3D5E9 /* BLENativeVC.swift */; };
->>>>>>> 263110c915cb978c22449e297ba04a14d186950e
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
