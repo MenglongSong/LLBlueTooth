@@ -46,6 +46,9 @@ extension BLENativeVC: CBCentralManagerDelegate {
             // 停止扫描
             central.stopScan()
             
+            debugPrint("最好的蓝牙设备", self.bestPeripheral?.peripheral as Any)
+            debugPrint("最好的设备 信号",  self.bestPeripheral?.rssi as Any)
+            
             // 连接蓝牙设备
             if (self.bestPeripheral != nil) {
                 central.connect(self.bestPeripheral!.peripheral!, options: nil)
@@ -59,7 +62,7 @@ extension BLENativeVC: CBCentralManagerDelegate {
         //debugPrint("扫描到的蓝牙设备", peripheral)
         // 过滤蓝牙设备
         // ((peripheral.name?.contains("Gemvary")) == true || (peripheral.name?.contains("GEM-")) == true)
-        if (peripheral.name?.contains("Gemvary")) == true && peripheral.state == CBPeripheralState.disconnected {
+        if (peripheral.name?.contains("GEM-")) == true && peripheral.state == CBPeripheralState.disconnected {
             if bestPeripheral == nil {
                 bestPeripheral = ZBMyPeripheral()
                 bestPeripheral?.peripheral = peripheral.copy() as? CBPeripheral
@@ -70,9 +73,6 @@ extension BLENativeVC: CBCentralManagerDelegate {
                     bestPeripheral?.rssi = RSSI
                 }
             }
-            
-            debugPrint("最好的蓝牙设备", bestPeripheral?.peripheral as Any)
-            debugPrint("最好的设备 信号",  bestPeripheral?.rssi as Any)
             debugPrint("最好的设备 广播数据", advertisementData)
         }
     }
@@ -103,6 +103,7 @@ extension BLENativeVC: CBPeripheralDelegate {
                 debugPrint("有旧蓝牙的服务", service)
                 peripheral.discoverCharacteristics(nil, for: service)
             } else {
+                peripheral.discoverCharacteristics(nil, for: service)
                 debugPrint("没有旧蓝牙的服务", service)
             }
         }
@@ -120,6 +121,23 @@ extension BLENativeVC: CBPeripheralDelegate {
                 peripheral.writeValue(inputStr.data(using: String.Encoding.utf8)!, for: characteristic, type: CBCharacteristicWriteType.withResponse)
             } else{
                 debugPrint("没有旧蓝牙的特征", characteristic)
+            }
+            
+//            if characteristic.uuid == CBUUID(string: "00002a00-0000-1000-8000-00805f9b34fb") {
+//                // 设置读特征
+//                peripheral.readValue(for: characteristic)
+//            }
+            if characteristic.uuid == CBUUID(string: "00002a01-0000-1000-8000-00805f9b34fb") {
+                // 设置订阅
+                peripheral.setNotifyValue(true, for: characteristic)
+               
+                let inputStr: String = "15817998727".md5().uppercased()
+                // 截取字符串的前十六位
+                let subIndex = inputStr.index(inputStr.startIndex, offsetBy: 16)
+                let subInputStr = inputStr.prefix(upTo: subIndex)
+                debugPrint("新蓝牙设备 写入数据: \(subInputStr)")
+                // 写入数据
+                peripheral.writeValue(subInputStr.data(using: String.Encoding.utf8)!, for: characteristic, type: CBCharacteristicWriteType.withResponse)
             }
         }
     }

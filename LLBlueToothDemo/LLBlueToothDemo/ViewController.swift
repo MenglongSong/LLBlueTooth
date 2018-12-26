@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let string = "15817998727".md5().uppercased()
+        debugPrint(string)
+        
+
+        let subIndex = string.index(string.startIndex, offsetBy: 16)
+        let subStr = string.prefix(upTo: subIndex)
+        debugPrint(subStr)
+        
     }
 
 
